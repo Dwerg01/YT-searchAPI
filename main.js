@@ -35,7 +35,7 @@ searchForm.addEventListener('submit', function(e) {
     };
     var searchString = document.querySelector("#search-bar").value;
     
-    xhttp.open("GET", `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchString}&type=video&maxResults=9&key=AIzaSyASyUoAD4gC9bzt3WDyqVMuNvnQZNwDnnc`, true);
+    xhttp.open("GET", `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchString}&type=video&maxResults=12&key=AIzaSyASyUoAD4gC9bzt3WDyqVMuNvnQZNwDnnc`, true);
     xhttp.send();
 })
 
