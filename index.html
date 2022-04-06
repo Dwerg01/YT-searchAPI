@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./main.js" type="text/JavaScript"></script>
+    <script src="./main.js" type="text/JavaScript" defer></script>
+    <link rel="shortcut icon" href="assets/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>YouTube</title>
 </head>
 <body>
-    <div>
-        <form id="search-main" action="/main.js">
-                <input id="search-bar" value="yoga beginner" placeholder="Search" type="text" name="search">
-                <button id="search-icon" type="submit" onclick="">
-                    <i class="fa fa-search"></i>
-                </button>
+        <form id="search-form">
+                <input id="search-bar" placeholder="Search" type="text" required>
+                <button><img src="assets/icons8-search.svg" alt="search"></button>
         </form>
-    </div>
-    <div id="hero-main"></div>
+    <div id="hero-main">use search </div>
 </body>
 </html>

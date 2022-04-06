@@ -28,6 +28,7 @@ body {
 
 #hero-main {
     background-color: var(--clr-bg-grey);
+    border-top: 1px solid hsla(0, 0%, 84%, 0.535);
     margin: 1em auto;
     display: flex;
     flex-wrap: wrap;
@@ -35,12 +36,19 @@ body {
 }
 
 
-#search-main {
+#search-form {
     display:flex;
     justify-content: space-between;
     height: 2em;
+    border: 2px solid var(--clr-text-grey);
+    border-radius: 4px;
     width: clamp(300px, 50%, 500px);
     margin: 0.5rem 0 auto;
+}
+
+#search-form button img {
+    filter: invert() brightness(40%);
+    height: 30px;
 }
 
 
@@ -49,7 +57,8 @@ body {
     padding: 0.2em 0.3em;
     margin: 0 auto;
     color: var(--clr-text-white);
-    border: none;
+    width: 100%;
+    background-color: black;;
 }
 
 #search-bar::placeholder {
